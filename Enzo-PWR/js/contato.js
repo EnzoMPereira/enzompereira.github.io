@@ -57,6 +57,10 @@ function enviarContato() {
         mensagem: mensagemEnviar.value,
     }
 
+    if (tempDB === null){
+        tempDB = [];
+    }
+    
     tempDB.push(payload);
 
     localStorage.setItem("db", JSON.stringify(tempDB));
