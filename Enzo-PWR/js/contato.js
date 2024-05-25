@@ -100,16 +100,17 @@ function subscribeMember(){
     let found = false;
     subscribeDB.forEach(element => {
       
-        if (found) {
-            return;
-        }
-
+    
         if (element.email === email.value && !found) {
             alert("Email já existente na base");
             found = true;
             checkbox.checked = false;
         }
     });
+
+    if (found) {
+        return;
+    }
 
     subscribeDB.push(payload);
     localStorage.setItem("subscribe", JSON.stringify(subscribeDB));
