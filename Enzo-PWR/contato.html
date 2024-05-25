@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deixe seus dados</h1>
+    <form action="">
+        <p>Nome Completo: <input type="text" name="Nome" id="nome-pessoa"></p>
+        <p>Data de nacimento: <input type="date" name="Data" id="data">
+        <p>Telefone: <input type="text" name="Telefone" id="telefone">
+        <p>E-mail: <input type="tel" name="email" id="email"></p>
+        <p>Escolariedade:
+            <select name="escola" id="escola">
+                <option value="infantil">Educação infantil</option>
+                <option value="Fundamental">Ensino Fundamental</option>
+                <option value="">Ensino Médio</option>
+                <option value="Superior">Ensino Superior (Graduação) </option>
+                <option value="Pós-graduação">Pós-graduação</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+            </select>
+        </p>
+        <fieldset id="f1">
+            <legend>Gênero:</legend> Masculino: <input type="radio" name="genero" id="masculino"><br><br>Feminino <input type="radio" name="genero" id="feminino"></p> 
+        </fieldset>
+                <br>
+        <fieldset id="f2">
+            <legend>Mensagem que gostaria de enviar: </legend>
+            <div id="area"><textarea name="txt" id="mensagem" rows="7" cols="70" minlength="" maxlength=""></textarea></div>
+        </fieldset>
+
+        <br><br>
+
+        <input type="checkbox" value="" id="subscribe">Se inscreva pra novas newsletters</input>
+
+        <br><br>
+
+        <p><button onclick="enviarContato()">Enviar</button></p>
+
+        
+    </form>
+</body>
+<script type="text/javascript" src="./js/contato.js"></script>
+</html>
